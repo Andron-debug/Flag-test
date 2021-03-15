@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp_01._03._2021
 {
-    partial class Form1
+    partial class Test
     {
         /// <summary>
         /// Required designer variable.
@@ -167,7 +167,7 @@ namespace WindowsFormsApp_01._03._2021
             this.checking_responses.UseVisualStyleBackColor = false;
             this.checking_responses.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // Test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -181,7 +181,7 @@ namespace WindowsFormsApp_01._03._2021
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.checking_responses);
-            this.Name = "Form1";
+            this.Name = "Test";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox2.ResumeLayout(false);

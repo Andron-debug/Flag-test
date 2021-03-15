@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp_01._03._2021
 {
-    public partial class Form1 : Form
+    public partial class Test : Form
     {
-        public Form1()
+        public Test()
         {
             InitializeComponent();
         }
