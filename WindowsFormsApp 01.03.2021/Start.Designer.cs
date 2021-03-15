@@ -64,6 +64,7 @@ namespace WindowsFormsApp_01._03._2021
             this.Start_button.TabIndex = 2;
             this.Start_button.Text = "НАЧАТЬ";
             this.Start_button.UseVisualStyleBackColor = false;
+            this.Start_button.Click += new System.EventHandler(this.Start_button_Click);
             // 
             // Start
             // 
@@ -85,6 +86,6 @@ namespace WindowsFormsApp_01._03._2021
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox name_textBox;
-        private System.Windows.Forms.Button Start_button;
+        public System.Windows.Forms.Button Start_button;
     }
 }

@@ -10,9 +10,12 @@ namespace WindowsFormsApp_01._03._2021
 {
     public partial class Test : Form
     {
-        public Test()
+        string name;
+        public Test(string user_name)
         {
             InitializeComponent();
+            name = user_name;
+            name_label.Text = "Пользователь:\n" + name;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -67,6 +70,11 @@ namespace WindowsFormsApp_01._03._2021
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Test_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

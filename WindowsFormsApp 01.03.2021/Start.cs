@@ -24,5 +24,19 @@ namespace WindowsFormsApp_01._03._2021
         {
 
         }
+
+        private void Start_button_Click(object sender, EventArgs e)
+        {
+            if (name_textBox.Text != "")
+            {
+                Form next = new Test(name_textBox.Text);
+                next.Show();
+                Hide();
+            }
+            else
+            {
+                MessageBox.Show("Введите имя");
+            }
+        }
     }
 }
