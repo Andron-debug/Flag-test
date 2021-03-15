@@ -8,13 +8,21 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp_01._03._2021
 {
-    public partial class Form1 : Form
+    public partial class Test : Form
     {
-        public Form1()
+        string name;
+        public Test(string user_name)
         {
             InitializeComponent();
+            name = user_name;
+            name_label.Text = "Пользователь:\n" + name;
         }
-
+        private void exet()
+        {
+            Form last = new Start();
+            last.Show();
+            this.Hide();
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             int rez = 0;
@@ -61,12 +69,22 @@ namespace WindowsFormsApp_01._03._2021
                 comboBoxEND.ForeColor = System.Drawing.Color.Red;
             }
             MessageBox.Show(rez + " из 3");
-
+            exet();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Test_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            exet();
         }
     }
 }
