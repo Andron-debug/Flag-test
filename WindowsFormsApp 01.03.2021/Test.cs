@@ -17,7 +17,7 @@ namespace WindowsFormsApp_01._03._2021
             name = user_name;
             name_label.Text = "Пользователь:\n" + name;
         }
-        private void exet()
+        private void exit()
         {
             Form last = new Start();
             last.Show();
@@ -48,28 +48,20 @@ namespace WindowsFormsApp_01._03._2021
                 label2.ForeColor = System.Drawing.Color.Red;
                 true2.ForeColor = System.Drawing.Color.Green;
             }
-            if ((comboBoxUP.SelectedItem == "Белый") & (comboBoxMID.SelectedItem == "Синий") & (comboBoxEND.SelectedItem == "Красный"))
+            if (comboBox_q3.SelectedIndex == 1)
             {
                 rez++;
                 label3.ForeColor = System.Drawing.Color.Green;
-                comboBoxUP.ForeColor = System.Drawing.Color.Gray;
-                comboBoxMID.ForeColor = System.Drawing.Color.Blue;
-                comboBoxEND.ForeColor = System.Drawing.Color.Red;
-
             }
             else
             {
                 label3.ForeColor = System.Drawing.Color.Red;
-                comboBoxUP.SelectedItem = "Белый";
-                comboBoxMID.SelectedItem = "Синий";
-                comboBoxEND.SelectedItem = "Красный";
-
-                comboBoxUP.ForeColor = System.Drawing.Color.Gray;
-                comboBoxMID.ForeColor = System.Drawing.Color.Blue;
-                comboBoxEND.ForeColor = System.Drawing.Color.Red;
+                comboBox_q3.SelectedIndex = 1;
+                comboBox_q3.ForeColor = System.Drawing.Color.Green;
             }
+         
             MessageBox.Show(rez + " из 3");
-            exet();
+            exit();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -84,7 +76,7 @@ namespace WindowsFormsApp_01._03._2021
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            exet();
+            exit();
         }
     }
 }

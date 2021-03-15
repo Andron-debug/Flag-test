@@ -29,9 +29,7 @@ namespace WindowsFormsApp_01._03._2021
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBoxEND = new System.Windows.Forms.ComboBox();
-            this.comboBoxMID = new System.Windows.Forms.ComboBox();
-            this.comboBoxUP = new System.Windows.Forms.ComboBox();
+            this.comboBox_q3 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -45,44 +43,19 @@ namespace WindowsFormsApp_01._03._2021
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // comboBoxEND
+            // comboBox_q3
             // 
-            this.comboBoxEND.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBoxEND.FormattingEnabled = true;
-            this.comboBoxEND.Items.AddRange(new object[] {
-            "Белый",
-            "Красный",
-            "Синий"});
-            this.comboBoxEND.Location = new System.Drawing.Point(12, 385);
-            this.comboBoxEND.Name = "comboBoxEND";
-            this.comboBoxEND.Size = new System.Drawing.Size(253, 39);
-            this.comboBoxEND.TabIndex = 26;
-            // 
-            // comboBoxMID
-            // 
-            this.comboBoxMID.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBoxMID.FormattingEnabled = true;
-            this.comboBoxMID.Items.AddRange(new object[] {
-            "Белый",
-            "Красный",
-            "Синий"});
-            this.comboBoxMID.Location = new System.Drawing.Point(12, 340);
-            this.comboBoxMID.Name = "comboBoxMID";
-            this.comboBoxMID.Size = new System.Drawing.Size(253, 39);
-            this.comboBoxMID.TabIndex = 25;
-            // 
-            // comboBoxUP
-            // 
-            this.comboBoxUP.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBoxUP.FormattingEnabled = true;
-            this.comboBoxUP.Items.AddRange(new object[] {
-            "Белый",
-            "Красный",
-            "Синий"});
-            this.comboBoxUP.Location = new System.Drawing.Point(12, 295);
-            this.comboBoxUP.Name = "comboBoxUP";
-            this.comboBoxUP.Size = new System.Drawing.Size(253, 39);
-            this.comboBoxUP.TabIndex = 24;
+            this.comboBox_q3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox_q3.FormattingEnabled = true;
+            this.comboBox_q3.Items.AddRange(new object[] {
+            "В.В. Путин",
+            "Петр I",
+            "Б.Н. Ельцын",
+            "Алексей Михайлович"});
+            this.comboBox_q3.Location = new System.Drawing.Point(12, 295);
+            this.comboBox_q3.Name = "comboBox_q3";
+            this.comboBox_q3.Size = new System.Drawing.Size(253, 39);
+            this.comboBox_q3.TabIndex = 24;
             // 
             // label3
             // 
@@ -90,9 +63,9 @@ namespace WindowsFormsApp_01._03._2021
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(7, 256);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(464, 25);
+            this.label3.Size = new System.Drawing.Size(689, 25);
             this.label3.TabIndex = 23;
-            this.label3.Text = "№3 Выберите проавлбный порядок цветов";
+            this.label3.Text = "№3 При каком павители впервые в России появился триколор?";
             // 
             // textBox1
             // 
@@ -198,9 +171,7 @@ namespace WindowsFormsApp_01._03._2021
             this.ClientSize = new System.Drawing.Size(1156, 594);
             this.Controls.Add(this.Exet_button);
             this.Controls.Add(this.name_label);
-            this.Controls.Add(this.comboBoxEND);
-            this.Controls.Add(this.comboBoxMID);
-            this.Controls.Add(this.comboBoxUP);
+            this.Controls.Add(this.comboBox_q3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.groupBox2);
@@ -218,10 +189,7 @@ namespace WindowsFormsApp_01._03._2021
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox comboBoxEND;
-        private System.Windows.Forms.ComboBox comboBoxMID;
-        private System.Windows.Forms.ComboBox comboBoxUP;
+        private System.Windows.Forms.ComboBox comboBox_q3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox groupBox2;
