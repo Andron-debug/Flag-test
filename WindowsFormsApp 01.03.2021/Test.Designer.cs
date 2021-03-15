@@ -41,6 +41,7 @@ namespace WindowsFormsApp_01._03._2021
             this.label1 = new System.Windows.Forms.Label();
             this.checking_responses = new System.Windows.Forms.Button();
             this.name_label = new System.Windows.Forms.Label();
+            this.Exet_button = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -178,11 +179,24 @@ namespace WindowsFormsApp_01._03._2021
             this.name_label.TabIndex = 27;
             this.name_label.Text = "Пользователь:";
             // 
+            // Exet_button
+            // 
+            this.Exet_button.BackColor = System.Drawing.Color.Purple;
+            this.Exet_button.ForeColor = System.Drawing.Color.White;
+            this.Exet_button.Location = new System.Drawing.Point(958, 450);
+            this.Exet_button.Name = "Exet_button";
+            this.Exet_button.Size = new System.Drawing.Size(117, 75);
+            this.Exet_button.TabIndex = 28;
+            this.Exet_button.Text = "Выйти";
+            this.Exet_button.UseVisualStyleBackColor = false;
+            this.Exet_button.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1156, 594);
+            this.Controls.Add(this.Exet_button);
             this.Controls.Add(this.name_label);
             this.Controls.Add(this.comboBoxEND);
             this.Controls.Add(this.comboBoxMID);
@@ -194,7 +208,6 @@ namespace WindowsFormsApp_01._03._2021
             this.Controls.Add(this.label1);
             this.Controls.Add(this.checking_responses);
             this.Name = "Test";
-            this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Test_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox2.ResumeLayout(false);
@@ -218,5 +231,6 @@ namespace WindowsFormsApp_01._03._2021
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button checking_responses;
         private System.Windows.Forms.Label name_label;
+        private System.Windows.Forms.Button Exet_button;
     }
 }

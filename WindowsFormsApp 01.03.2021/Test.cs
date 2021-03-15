@@ -17,7 +17,12 @@ namespace WindowsFormsApp_01._03._2021
             name = user_name;
             name_label.Text = "Пользователь:\n" + name;
         }
-
+        private void exet()
+        {
+            Form last = new Start();
+            last.Show();
+            this.Hide();
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             int rez = 0;
@@ -64,7 +69,7 @@ namespace WindowsFormsApp_01._03._2021
                 comboBoxEND.ForeColor = System.Drawing.Color.Red;
             }
             MessageBox.Show(rez + " из 3");
-
+            exet();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -75,6 +80,11 @@ namespace WindowsFormsApp_01._03._2021
         private void Test_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            exet();
         }
     }
 }
