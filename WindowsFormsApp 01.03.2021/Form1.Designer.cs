@@ -165,6 +165,7 @@ namespace WindowsFormsApp_01._03._2021
             this.checking_responses.TabIndex = 18;
             this.checking_responses.Text = "Проверить";
             this.checking_responses.UseVisualStyleBackColor = false;
+            this.checking_responses.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 

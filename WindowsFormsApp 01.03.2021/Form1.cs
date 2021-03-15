@@ -40,9 +40,6 @@ namespace WindowsFormsApp_01._03._2021
                 label2.ForeColor = System.Drawing.Color.Red;
                 true2.ForeColor = System.Drawing.Color.Green;
             }
-            //0.Белый
-            //1.Красный
-            //2.Синий
             if ((comboBoxUP.SelectedItem == "Белый") & (comboBoxMID.SelectedItem == "Синий") & (comboBoxEND.SelectedItem == "Красный"))
             {
                 rez++;
