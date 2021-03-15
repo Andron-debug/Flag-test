@@ -29,6 +29,7 @@ namespace WindowsFormsApp_01._03._2021
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Test));
             this.comboBox_q3 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -40,7 +41,14 @@ namespace WindowsFormsApp_01._03._2021
             this.checking_responses = new System.Windows.Forms.Button();
             this.name_label = new System.Windows.Forms.Label();
             this.Exet_button = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Flag1 = new System.Windows.Forms.PictureBox();
+            this.Flag2 = new System.Windows.Forms.PictureBox();
+            this.Flag3 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Flag1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Flag2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Flag3)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox_q3
@@ -164,11 +172,59 @@ namespace WindowsFormsApp_01._03._2021
             this.Exet_button.UseVisualStyleBackColor = false;
             this.Exet_button.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(7, 354);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(284, 25);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "№4 Выбирите флаг Росси";
+            // 
+            // Flag1
+            // 
+            this.Flag1.BackColor = System.Drawing.SystemColors.Control;
+            this.Flag1.Image = ((System.Drawing.Image)(resources.GetObject("Flag1.Image")));
+            this.Flag1.Location = new System.Drawing.Point(12, 418);
+            this.Flag1.Name = "Flag1";
+            this.Flag1.Size = new System.Drawing.Size(150, 110);
+            this.Flag1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Flag1.TabIndex = 30;
+            this.Flag1.TabStop = false;
+            this.Flag1.Click += new System.EventHandler(this.Flag1_Click);
+            // 
+            // Flag2
+            // 
+            this.Flag2.Image = ((System.Drawing.Image)(resources.GetObject("Flag2.Image")));
+            this.Flag2.Location = new System.Drawing.Point(203, 418);
+            this.Flag2.Name = "Flag2";
+            this.Flag2.Size = new System.Drawing.Size(150, 110);
+            this.Flag2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Flag2.TabIndex = 31;
+            this.Flag2.TabStop = false;
+            this.Flag2.Click += new System.EventHandler(this.Flag2_Click);
+            // 
+            // Flag3
+            // 
+            this.Flag3.Image = ((System.Drawing.Image)(resources.GetObject("Flag3.Image")));
+            this.Flag3.Location = new System.Drawing.Point(391, 418);
+            this.Flag3.Name = "Flag3";
+            this.Flag3.Size = new System.Drawing.Size(150, 110);
+            this.Flag3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Flag3.TabIndex = 32;
+            this.Flag3.TabStop = false;
+            this.Flag3.Click += new System.EventHandler(this.Flag3_Click);
+            // 
             // Test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1156, 594);
+            this.Controls.Add(this.Flag3);
+            this.Controls.Add(this.Flag2);
+            this.Controls.Add(this.Flag1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.Exet_button);
             this.Controls.Add(this.name_label);
             this.Controls.Add(this.comboBox_q3);
@@ -183,6 +239,9 @@ namespace WindowsFormsApp_01._03._2021
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Flag1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Flag2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Flag3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,5 +259,9 @@ namespace WindowsFormsApp_01._03._2021
         private System.Windows.Forms.Button checking_responses;
         private System.Windows.Forms.Label name_label;
         private System.Windows.Forms.Button Exet_button;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox Flag1;
+        private System.Windows.Forms.PictureBox Flag2;
+        private System.Windows.Forms.PictureBox Flag3;
     }
 }
