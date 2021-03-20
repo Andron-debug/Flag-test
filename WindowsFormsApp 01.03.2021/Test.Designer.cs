@@ -35,7 +35,6 @@ namespace WindowsFormsApp_01._03._2021
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.checking_responses = new System.Windows.Forms.Button();
             this.name_label = new System.Windows.Forms.Label();
             this.Exet_button = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,6 +44,8 @@ namespace WindowsFormsApp_01._03._2021
             this.true2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.checking_responses = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Flag1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Flag2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Flag3)).BeginInit();
@@ -110,18 +111,6 @@ namespace WindowsFormsApp_01._03._2021
             this.label1.TabIndex = 19;
             this.label1.Text = "№1 В каком году был утвержден российский триколор?";
             // 
-            // checking_responses
-            // 
-            this.checking_responses.BackColor = System.Drawing.Color.Purple;
-            this.checking_responses.ForeColor = System.Drawing.Color.White;
-            this.checking_responses.Location = new System.Drawing.Point(743, 427);
-            this.checking_responses.Name = "checking_responses";
-            this.checking_responses.Size = new System.Drawing.Size(159, 121);
-            this.checking_responses.TabIndex = 18;
-            this.checking_responses.Text = "Проверить";
-            this.checking_responses.UseVisualStyleBackColor = false;
-            this.checking_responses.Click += new System.EventHandler(this.button1_Click);
-            // 
             // name_label
             // 
             this.name_label.AutoSize = true;
@@ -138,7 +127,7 @@ namespace WindowsFormsApp_01._03._2021
             // 
             this.Exet_button.BackColor = System.Drawing.Color.Purple;
             this.Exet_button.ForeColor = System.Drawing.Color.White;
-            this.Exet_button.Location = new System.Drawing.Point(958, 450);
+            this.Exet_button.Location = new System.Drawing.Point(958, 433);
             this.Exet_button.Name = "Exet_button";
             this.Exet_button.Size = new System.Drawing.Size(117, 75);
             this.Exet_button.TabIndex = 28;
@@ -230,6 +219,29 @@ namespace WindowsFormsApp_01._03._2021
             this.panel1.Size = new System.Drawing.Size(194, 92);
             this.panel1.TabIndex = 33;
             // 
+            // checking_responses
+            // 
+            this.checking_responses.BackColor = System.Drawing.Color.Purple;
+            this.checking_responses.ForeColor = System.Drawing.Color.White;
+            this.checking_responses.Location = new System.Drawing.Point(743, 427);
+            this.checking_responses.Name = "checking_responses";
+            this.checking_responses.Size = new System.Drawing.Size(159, 121);
+            this.checking_responses.TabIndex = 18;
+            this.checking_responses.Text = "Проверить";
+            this.checking_responses.UseVisualStyleBackColor = false;
+            this.checking_responses.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Purple;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(958, 507);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(117, 75);
+            this.button1.TabIndex = 34;
+            this.button1.Text = "Выйти";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // Test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -237,6 +249,7 @@ namespace WindowsFormsApp_01._03._2021
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1156, 594);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Flag3);
             this.Controls.Add(this.Flag2);
@@ -269,7 +282,6 @@ namespace WindowsFormsApp_01._03._2021
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button checking_responses;
         private System.Windows.Forms.Label name_label;
         private System.Windows.Forms.Button Exet_button;
         private System.Windows.Forms.Label label4;
@@ -279,5 +291,7 @@ namespace WindowsFormsApp_01._03._2021
         private System.Windows.Forms.RadioButton true2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button checking_responses;
+        private System.Windows.Forms.Button button1;
     }
 }

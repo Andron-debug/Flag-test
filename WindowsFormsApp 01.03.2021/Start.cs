@@ -19,7 +19,7 @@ namespace WindowsFormsApp_01._03._2021
         private void Form1_Load(object sender, EventArgs e)
         {
             SoundPlayer gimn = new SoundPlayer("Gimn.wav");
-                gimn.Play();
+              gimn.Play();
         }
 
         private void label1_Click(object sender, EventArgs e)
