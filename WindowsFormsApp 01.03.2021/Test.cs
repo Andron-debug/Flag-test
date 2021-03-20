@@ -5,12 +5,14 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.IO;
 
 namespace WindowsFormsApp_01._03._2021
 {
     public partial class Test : Form
     {
         string name;
+        StreamWriter sr = File.AppendText("Result.txt");
         public Test(string user_name)
         {
             InitializeComponent();
@@ -22,6 +24,7 @@ namespace WindowsFormsApp_01._03._2021
         }
         private void exit()
         {
+            sr.Close();
             Form last = new Start();
             last.Show();
             this.Hide();
@@ -75,6 +78,7 @@ namespace WindowsFormsApp_01._03._2021
                 Flag1.BackColor = System.Drawing.Color.Green; 
             }
             MessageBox.Show(rez + " из 4");
+            sr.WriteLine(name + " " + rez);
             exit();
         }
 
