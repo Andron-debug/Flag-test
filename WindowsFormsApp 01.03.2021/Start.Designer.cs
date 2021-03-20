@@ -75,6 +75,7 @@ namespace WindowsFormsApp_01._03._2021
             this.Controls.Add(this.name_textBox);
             this.Controls.Add(this.label1);
             this.Name = "Start";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Start_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
