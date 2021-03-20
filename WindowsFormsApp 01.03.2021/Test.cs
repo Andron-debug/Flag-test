@@ -101,7 +101,7 @@ namespace WindowsFormsApp_01._03._2021
         private void Flag1_Click(object sender, EventArgs e)
         {
             flag_seted = 1;
-            Flag1.BackColor = System.Drawing.Color.Black;
+            Flag1.BackColor = System.Drawing.Color.White;
             Flag2.BackColor = Color.FromArgb(0, 0, 0, 0);
             Flag3.BackColor = Color.FromArgb(0, 0, 0, 0);
         }
@@ -110,7 +110,7 @@ namespace WindowsFormsApp_01._03._2021
         {
             flag_seted = 2;
             Flag1.BackColor = Color.FromArgb(0, 0, 0, 0);
-            Flag2.BackColor = System.Drawing.Color.Black;
+            Flag2.BackColor = System.Drawing.Color.White;
             Flag3.BackColor = Color.FromArgb(0, 0, 0, 0);
         }
 
@@ -119,7 +119,7 @@ namespace WindowsFormsApp_01._03._2021
             flag_seted = 3;
             Flag1.BackColor = Color.FromArgb(0, 0, 0, 0);
             Flag2.BackColor = Color.FromArgb(0, 0, 0, 0);
-            Flag3.BackColor = System.Drawing.Color.Black;
+            Flag3.BackColor = System.Drawing.Color.White;
         }
     }
 }
