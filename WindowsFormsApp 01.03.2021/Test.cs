@@ -1,16 +1,18 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.IO;
 
 namespace WindowsFormsApp_01._03._2021
 {
     public partial class Test : Form
     {
         string name;
+
         private void select_flag(int n = 0, string color = "White")
         {
             Flag1.BackColor = Color.Transparent;
@@ -20,6 +22,9 @@ namespace WindowsFormsApp_01._03._2021
             if (n == 2) Flag2.BackColor = Color.FromName(color);
             if (n == 3) Flag3.BackColor = Color.FromName(color);
         }
+
+        StreamWriter sr = File.AppendText("Result.txt");
+
         public Test(string user_name)
         {
             InitializeComponent();
@@ -29,6 +34,7 @@ namespace WindowsFormsApp_01._03._2021
         }
         private void exit()
         {
+            sr.Close();
             Form last = new Start();
             last.Show();
             this.Hide();
@@ -80,6 +86,7 @@ namespace WindowsFormsApp_01._03._2021
                 select_flag(1, "Green");
             }
             MessageBox.Show(rez + " из 4");
+            sr.WriteLine(name + " " + rez);
             exit();
         }
 
@@ -102,19 +109,25 @@ namespace WindowsFormsApp_01._03._2021
         private void Flag1_Click(object sender, EventArgs e)
         {
             flag_seted = 1;
+
             select_flag(1);
+
         }
 
         private void Flag2_Click(object sender, EventArgs e)
         {
             flag_seted = 2;
+
             select_flag(2);
+
         }
 
         private void Flag3_Click(object sender, EventArgs e)
         {
             flag_seted = 3;
+
             select_flag(3);
+
         }
     }
 }

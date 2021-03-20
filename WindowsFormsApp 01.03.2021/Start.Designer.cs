@@ -29,6 +29,7 @@ namespace WindowsFormsApp_01._03._2021
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Start));
             this.label1 = new System.Windows.Forms.Label();
             this.name_textBox = new System.Windows.Forms.TextBox();
             this.Start_button = new System.Windows.Forms.Button();
@@ -37,8 +38,10 @@ namespace WindowsFormsApp_01._03._2021
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.CausesValidation = false;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(254, 73);
+            this.label1.Location = new System.Drawing.Point(254, 56);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(249, 45);
             this.label1.TabIndex = 0;
@@ -48,7 +51,7 @@ namespace WindowsFormsApp_01._03._2021
             // name_textBox
             // 
             this.name_textBox.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.name_textBox.Location = new System.Drawing.Point(267, 150);
+            this.name_textBox.Location = new System.Drawing.Point(268, 201);
             this.name_textBox.Name = "name_textBox";
             this.name_textBox.Size = new System.Drawing.Size(235, 41);
             this.name_textBox.TabIndex = 1;
@@ -58,7 +61,7 @@ namespace WindowsFormsApp_01._03._2021
             this.Start_button.BackColor = System.Drawing.Color.Purple;
             this.Start_button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Start_button.ForeColor = System.Drawing.Color.White;
-            this.Start_button.Location = new System.Drawing.Point(267, 246);
+            this.Start_button.Location = new System.Drawing.Point(267, 339);
             this.Start_button.Name = "Start_button";
             this.Start_button.Size = new System.Drawing.Size(236, 79);
             this.Start_button.TabIndex = 2;
@@ -70,11 +73,14 @@ namespace WindowsFormsApp_01._03._2021
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Start_button);
             this.Controls.Add(this.name_textBox);
             this.Controls.Add(this.label1);
             this.Name = "Start";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Start_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

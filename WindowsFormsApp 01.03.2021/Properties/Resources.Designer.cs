@@ -59,5 +59,15 @@ namespace WindowsFormsApp_01._03._2021.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Test_Background {
+            get {
+                object obj = ResourceManager.GetObject("Test_Background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

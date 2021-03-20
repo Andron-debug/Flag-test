@@ -38,5 +38,10 @@ namespace WindowsFormsApp_01._03._2021
                 MessageBox.Show("Введите имя");
             }
         }
+
+        private void Start_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
