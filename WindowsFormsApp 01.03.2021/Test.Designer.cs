@@ -29,9 +29,8 @@ namespace WindowsFormsApp_01._03._2021
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBoxEND = new System.Windows.Forms.ComboBox();
-            this.comboBoxMID = new System.Windows.Forms.ComboBox();
-            this.comboBoxUP = new System.Windows.Forms.ComboBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Test));
+            this.comboBox_q3 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -42,47 +41,29 @@ namespace WindowsFormsApp_01._03._2021
             this.checking_responses = new System.Windows.Forms.Button();
             this.name_label = new System.Windows.Forms.Label();
             this.Exet_button = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Flag1 = new System.Windows.Forms.PictureBox();
+            this.Flag2 = new System.Windows.Forms.PictureBox();
+            this.Flag3 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Flag1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Flag2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Flag3)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBoxEND
+            // comboBox_q3
             // 
-            this.comboBoxEND.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBoxEND.FormattingEnabled = true;
-            this.comboBoxEND.Items.AddRange(new object[] {
-            "Белый",
-            "Красный",
-            "Синий"});
-            this.comboBoxEND.Location = new System.Drawing.Point(12, 385);
-            this.comboBoxEND.Name = "comboBoxEND";
-            this.comboBoxEND.Size = new System.Drawing.Size(253, 39);
-            this.comboBoxEND.TabIndex = 26;
-            // 
-            // comboBoxMID
-            // 
-            this.comboBoxMID.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBoxMID.FormattingEnabled = true;
-            this.comboBoxMID.Items.AddRange(new object[] {
-            "Белый",
-            "Красный",
-            "Синий"});
-            this.comboBoxMID.Location = new System.Drawing.Point(12, 340);
-            this.comboBoxMID.Name = "comboBoxMID";
-            this.comboBoxMID.Size = new System.Drawing.Size(253, 39);
-            this.comboBoxMID.TabIndex = 25;
-            // 
-            // comboBoxUP
-            // 
-            this.comboBoxUP.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBoxUP.FormattingEnabled = true;
-            this.comboBoxUP.Items.AddRange(new object[] {
-            "Белый",
-            "Красный",
-            "Синий"});
-            this.comboBoxUP.Location = new System.Drawing.Point(12, 295);
-            this.comboBoxUP.Name = "comboBoxUP";
-            this.comboBoxUP.Size = new System.Drawing.Size(253, 39);
-            this.comboBoxUP.TabIndex = 24;
+            this.comboBox_q3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox_q3.FormattingEnabled = true;
+            this.comboBox_q3.Items.AddRange(new object[] {
+            "В.В. Путин",
+            "Петр I",
+            "Б.Н. Ельцын",
+            "Алексей Михайлович"});
+            this.comboBox_q3.Location = new System.Drawing.Point(12, 295);
+            this.comboBox_q3.Name = "comboBox_q3";
+            this.comboBox_q3.Size = new System.Drawing.Size(253, 39);
+            this.comboBox_q3.TabIndex = 24;
             // 
             // label3
             // 
@@ -90,9 +71,9 @@ namespace WindowsFormsApp_01._03._2021
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(7, 256);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(464, 25);
+            this.label3.Size = new System.Drawing.Size(689, 25);
             this.label3.TabIndex = 23;
-            this.label3.Text = "№3 Выберите проавлбный порядок цветов";
+            this.label3.Text = "№3 При каком павители впервые в России появился триколор?";
             // 
             // textBox1
             // 
@@ -191,16 +172,62 @@ namespace WindowsFormsApp_01._03._2021
             this.Exet_button.UseVisualStyleBackColor = false;
             this.Exet_button.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(7, 354);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(284, 25);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "№4 Выбирите флаг Росси";
+            // 
+            // Flag1
+            // 
+            this.Flag1.BackColor = System.Drawing.SystemColors.Control;
+            this.Flag1.Image = ((System.Drawing.Image)(resources.GetObject("Flag1.Image")));
+            this.Flag1.Location = new System.Drawing.Point(12, 418);
+            this.Flag1.Name = "Flag1";
+            this.Flag1.Size = new System.Drawing.Size(150, 110);
+            this.Flag1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Flag1.TabIndex = 30;
+            this.Flag1.TabStop = false;
+            this.Flag1.Click += new System.EventHandler(this.Flag1_Click);
+            // 
+            // Flag2
+            // 
+            this.Flag2.Image = ((System.Drawing.Image)(resources.GetObject("Flag2.Image")));
+            this.Flag2.Location = new System.Drawing.Point(203, 418);
+            this.Flag2.Name = "Flag2";
+            this.Flag2.Size = new System.Drawing.Size(150, 110);
+            this.Flag2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Flag2.TabIndex = 31;
+            this.Flag2.TabStop = false;
+            this.Flag2.Click += new System.EventHandler(this.Flag2_Click);
+            // 
+            // Flag3
+            // 
+            this.Flag3.Image = ((System.Drawing.Image)(resources.GetObject("Flag3.Image")));
+            this.Flag3.Location = new System.Drawing.Point(391, 418);
+            this.Flag3.Name = "Flag3";
+            this.Flag3.Size = new System.Drawing.Size(150, 110);
+            this.Flag3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Flag3.TabIndex = 32;
+            this.Flag3.TabStop = false;
+            this.Flag3.Click += new System.EventHandler(this.Flag3_Click);
+            // 
             // Test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1156, 594);
+            this.Controls.Add(this.Flag3);
+            this.Controls.Add(this.Flag2);
+            this.Controls.Add(this.Flag1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.Exet_button);
             this.Controls.Add(this.name_label);
-            this.Controls.Add(this.comboBoxEND);
-            this.Controls.Add(this.comboBoxMID);
-            this.Controls.Add(this.comboBoxUP);
+            this.Controls.Add(this.comboBox_q3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.groupBox2);
@@ -212,16 +239,16 @@ namespace WindowsFormsApp_01._03._2021
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Flag1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Flag2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Flag3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox comboBoxEND;
-        private System.Windows.Forms.ComboBox comboBoxMID;
-        private System.Windows.Forms.ComboBox comboBoxUP;
+        private System.Windows.Forms.ComboBox comboBox_q3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -232,5 +259,9 @@ namespace WindowsFormsApp_01._03._2021
         private System.Windows.Forms.Button checking_responses;
         private System.Windows.Forms.Label name_label;
         private System.Windows.Forms.Button Exet_button;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox Flag1;
+        private System.Windows.Forms.PictureBox Flag2;
+        private System.Windows.Forms.PictureBox Flag3;
     }
 }
