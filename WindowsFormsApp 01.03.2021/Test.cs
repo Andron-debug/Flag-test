@@ -11,14 +11,21 @@ namespace WindowsFormsApp_01._03._2021
     public partial class Test : Form
     {
         string name;
+        private void select_flag(int n = 0, string color = "White")
+        {
+            Flag1.BackColor = Color.Transparent;
+            Flag2.BackColor = Color.Transparent;
+            Flag3.BackColor = Color.Transparent;
+            if (n == 1) Flag1.BackColor = Color.FromName(color);
+            if (n == 2) Flag2.BackColor = Color.FromName(color);
+            if (n == 3) Flag3.BackColor = Color.FromName(color);
+        }
         public Test(string user_name)
         {
             InitializeComponent();
             name = user_name;
             name_label.Text = "Пользователь:\n" + name;
-            Flag1.BackColor = Color.FromArgb(0, 0, 0, 0);
-            Flag2.BackColor = Color.FromArgb(0, 0, 0, 0);
-            Flag3.BackColor = Color.FromArgb(0, 0, 0, 0);
+            select_flag();
         }
         private void exit()
         {
@@ -65,14 +72,12 @@ namespace WindowsFormsApp_01._03._2021
          if(flag_seted == 1)
             {
                 label4.ForeColor = System.Drawing.Color.Green;
-                Flag2.BackColor = Color.FromArgb(0, 0, 0, 0);
-                Flag3.BackColor = Color.FromArgb(0, 0, 0, 0);
                 rez++;
             }
             else
             {
                 label4.ForeColor = System.Drawing.Color.Red;
-                Flag1.BackColor = System.Drawing.Color.Green; 
+                select_flag(1, "Green");
             }
             MessageBox.Show(rez + " из 4");
             exit();
@@ -97,25 +102,19 @@ namespace WindowsFormsApp_01._03._2021
         private void Flag1_Click(object sender, EventArgs e)
         {
             flag_seted = 1;
-            Flag1.BackColor = System.Drawing.Color.Black;
-            Flag2.BackColor = Color.FromArgb(0, 0, 0, 0);
-            Flag3.BackColor = Color.FromArgb(0, 0, 0, 0);
+            select_flag(1);
         }
 
         private void Flag2_Click(object sender, EventArgs e)
         {
             flag_seted = 2;
-            Flag1.BackColor = Color.FromArgb(0, 0, 0, 0);
-            Flag2.BackColor = System.Drawing.Color.Black;
-            Flag3.BackColor = Color.FromArgb(0, 0, 0, 0);
+            select_flag(2);
         }
 
         private void Flag3_Click(object sender, EventArgs e)
         {
             flag_seted = 3;
-            Flag1.BackColor = Color.FromArgb(0, 0, 0, 0);
-            Flag2.BackColor = Color.FromArgb(0, 0, 0, 0);
-            Flag3.BackColor = System.Drawing.Color.Black;
+            select_flag(3);
         }
     }
 }
