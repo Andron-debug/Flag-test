@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Media;
 
 namespace WindowsFormsApp_01._03._2021
 {
@@ -17,7 +18,8 @@ namespace WindowsFormsApp_01._03._2021
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            SoundPlayer gimn = new SoundPlayer("Gimn.wav");
+                gimn.Play();
         }
 
         private void label1_Click(object sender, EventArgs e)
