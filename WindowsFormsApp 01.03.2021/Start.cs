@@ -15,10 +15,9 @@ namespace WindowsFormsApp_01._03._2021
         {
             InitializeComponent();
         }
-
+        SoundPlayer gimn = new SoundPlayer("Gimn.wav");
         private void Form1_Load(object sender, EventArgs e)
         {
-            SoundPlayer gimn = new SoundPlayer("Gimn.wav");
                 gimn.Play();
         }
 
@@ -34,6 +33,7 @@ namespace WindowsFormsApp_01._03._2021
                 Form next = new Test(name_textBox.Text);
                 next.Show();
                 Hide();
+                gimn.Stop();
             }
             else
             {
